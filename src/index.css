@@ -1,0 +1,176 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+/* font-family: Montserrat; */
+
+
+  /* Theme colors */
+  --primary-color: rgba(35, 26, 28, 1);
+  --secondary-color: #4CAF50;
+  --background-color:rgba(255, 255, 255, 1);
+  --white-color: rgba(255, 255, 255, 1);
+
+  --gray-color: rgba(79, 79, 79, 1);
+  --gray-100: rgba(237, 242, 246, 1);
+--gray-200: rgba(49, 49, 49, 1);
+--gray-300: rgba(127, 127, 127, 1);
+
+
+  --background-color-gradient: linear-gradient(
+    180deg,
+    #83bf2d -53.23%,
+    #00a3af 191.13%
+  );
+  --background-gradient-menu: linear-gradient(90deg, #83BF2D 0%, rgba(0, 163, 175, 0) 100%);
+
+  --text-color: #333333;
+  --menu-hover-gradient-start: #231A1C;
+  --menu-hover-gradient-end: #4CAF50;
+  --menu-hover-text: #FFFFFF;
+  --text-blue : rgba(0, 149, 224, 1);
+
+  
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  /* min-width: 320px; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+.bg-blacks{
+  background-color: var(--primary-color);
+}
+/* .bg-gradients{
+  background-color: var(--background-color-gradient)!important;
+} */
+.bg-gradients {
+  background: var(--background-color-gradient) !important;
+}
+.bg-gradients-menu {
+  background: var(--background-gradient-menu) !important;
+}
+.bg-gray{
+  background-color: var(--gray-color);
+}
+.bg-gray-100{
+  background-color: var(--gray-100)!important;
+}
+.bg-gray-200{
+  background-color: var(--gray-200)!important;
+}
+.bg-gray-300{
+  background-color: var(--gray-300)!important;
+}
+.bg-blacks{
+  background-color: var(--primary-color);
+}
+.bg-blue{
+  background-color: var(--text-blue);
+}
+.text-gradient {
+  background: var(--background-color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradients{
+  color: var(--background-color-gradient)!important;
+}
+
+.text-white{
+  color: var(--white-color)!important;
+}
+.text-blue{
+  color: var(--text-blue);
+}
+.text-grays{
+  color: var(--gray-color)!important;
+}
+.text-gray-100{
+  color: var(--gray-100)!important;
+}
+.text-gray-200{
+  color: var(--gray-200)!important;
+}
+.text-gray-300{
+  color: var(--gray-300)!important;
+}
+.text-green{
+  color: var(--secondary-color);
+}
+/* Gradient border with rounded corners */
+.border-gradients:hover {
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    108.57deg,
+    #65b94a 3.36%,
+    #00a3af 66.8%,
+    #00a3af 96.89%
+  );
+  border-image-slice: 1;
+  border-radius: 1rem; /* Matches rounded-2xl */
+}
+.border-gradients{
+          background: linear-gradient(#fff, #fff) padding-box,
+                       linear-gradient(108.57deg, #65B94A 3.36%, #00A3AF 66.8%, #00A3AF 96.89%);
+          border: 2px solid transparent;
+        }
+.border-gradients:hover{
+          background: linear-gradient(#fff, #fff) padding-box,
+                       linear-gradient(108.57deg, #65B94A 3.36%, #00A3AF 66.8%, #00A3AF 96.89%);
+          border: 2px solid transparent;
+        }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
