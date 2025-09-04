@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 import { HeroSection } from "../../components/UI";
 import { ContactForm, ContactInfoSection } from "../../components/ContactUs";
 

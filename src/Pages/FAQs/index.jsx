@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { HeroSection, TitleHeading } from "../../components/UI";
 
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 
 const faqData = [
   {
