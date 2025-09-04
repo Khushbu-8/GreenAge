@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeroSection }from '../../components/UI';
 import NewsSection from '../../components/News/NewsSection';
-
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 const News = () => {
   return (
     <main className="pt-0">
