@@ -1,7 +1,7 @@
 import React from "react";
 import backgroundImg from "../../assets/images/background-hero.png";
 import RectangleFram from "../../assets/images/Rectangle-fram.png";
-import vectorGImg from "../../assets/AbourUsimages/Vector-G.png";
+import vectorGImg from "../../assets/AboutUsimages/Vector-G.png";
 
 const ProductHero = ({ title, tagline, rightImage }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Storyimage1 from "../../assets/AbourUsimages/Storyimage1.jpg";
-import Storyimage2 from "../../assets/AbourUsimages/Storyimage2.jpg";
+import Storyimage1 from "../../assets/AboutUsimages/Storyimage1.jpg";
+import Storyimage2 from "../../assets/AboutUsimages/Storyimage2.jpg";
 import ProductInfoSection from "../Products/AllProduct/ProductInfoSection";
 
 const OurStory = () => {

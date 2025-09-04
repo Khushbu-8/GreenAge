@@ -1,8 +1,8 @@
 import React from "react";
 import backgroundImg from "../../assets/images/background-hero.png";
 import RectangleFram from "../../assets/images/Rectangle-fram.png";
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
-import vectorGImg from "../../assets/AbourUsimages/Vector-G.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
+import vectorGImg from "../../assets/AboutUsimages/Vector-G.png";
 
 const AboutHero = () => {
   return (

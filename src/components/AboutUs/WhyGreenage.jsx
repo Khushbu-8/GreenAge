@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import BagImage1 from "../../assets/AbourUsimages/beg.png";
-import BagImage2 from "../../assets/AbourUsimages/beg.png";
-import BagImage3 from "../../assets/AbourUsimages/beg.png";
-import BagImage4 from "../../assets/AbourUsimages/beg.png";
-import Icon1 from "../../assets/AbourUsimages/icon1.png";
-import Icon2 from "../../assets/AbourUsimages/icon2.png";
-import Icon3 from "../../assets/AbourUsimages/icon3.png";
-import Icon4 from "../../assets/AbourUsimages/icon4.png";
+import BagImage1 from "../../assets/AboutUsimages/beg.png";
+import BagImage2 from "../../assets/AboutUsimages/beg.png";
+import BagImage3 from "../../assets/AboutUsimages/beg.png";
+import BagImage4 from "../../assets/AboutUsimages/beg.png";
+import Icon1 from "../../assets/AboutUsimages/Icon1.png";
+import Icon2 from "../../assets/AboutUsimages/Icon2.png";
+import Icon3 from "../../assets/AboutUsimages/Icon3.png";
+import Icon4 from "../../assets/AboutUsimages/Icon4.png";
 import TitleHeading from "../UI/TitleHeading";
 
 const WhyGreenage = () => {
