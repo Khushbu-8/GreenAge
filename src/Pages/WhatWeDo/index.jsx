@@ -4,7 +4,7 @@ import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
 import ProductInfoSection from "../../components/Products/AllProduct/ProductInfoSection";
 import Characteristics from "../../components/Products/AllProduct/Characteristics";
 
-import techImage from "../../assets/WhatWeDoimages/techmen.jpg";
+import techImage from "../../assets/Whatwedoimages/techmen.jpg";
 import { CompoundingSection, PulverisingSection, QualitySection } from "../../components/WhatWeDo";
 
 const WhatWeDo = () => {
