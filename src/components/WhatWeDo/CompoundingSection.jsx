@@ -4,7 +4,7 @@ import machineImg from "../../assets/Whatwedoimages/machineImg.png";
 
 const CompoundingSection = () => {
   return (
-    <section className="w-full py-14">
+    <section className="w-full py-14 ">
       <div className="flex flex-col lg:flex-row items-center gap-10">
         {/* Left Image Section */}
         <div className="relative w-full lg:w-1/2 px-10">
