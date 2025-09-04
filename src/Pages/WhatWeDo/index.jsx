@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 import ProductInfoSection from "../../components/Products/AllProduct/ProductInfoSection";
 import Characteristics from "../../components/Products/AllProduct/Characteristics";
 

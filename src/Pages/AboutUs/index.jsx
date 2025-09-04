@@ -2,7 +2,7 @@ import React from 'react';
 import { AboutUs } from '../../components/Home';
 import { People, AboutHero, OurStory, WhyGreenage } from '../../components/AboutUs';
 import { HeroSection } from '../../components/UI';
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 
 const AboutUsPage = () => {
   return (

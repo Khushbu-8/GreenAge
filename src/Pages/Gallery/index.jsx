@@ -1,6 +1,6 @@
 import React from 'react';
 import { Gallery } from '../../components/Home';
-import aboutGroupImg from "../../assets/AbourUsimages/About-group.png";
+import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 import { HeroSection } from '../../components/UI';
 
 const GalleryPage = () => {
