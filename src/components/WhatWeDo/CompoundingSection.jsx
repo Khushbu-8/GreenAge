@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-import machineImg from "../../assets/WhatWeDoimages/machineImg.png";
+import machineImg from "../../assets/Whatwedoimages/machineImg.png";
 
 const CompoundingSection = () => {
   return (
