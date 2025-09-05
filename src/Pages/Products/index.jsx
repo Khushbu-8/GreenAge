@@ -108,12 +108,12 @@ const Products = () => {
       <section className="bg-white w-full py-6">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
           {/* Small heading */}
-          <div className="text-sm md:text-base font-medium text-blue px-3 py-1 text-center rounded-md mb-2">
+          <div className="text-sm md:text-base  xl:text-lg font-semibold text-blue px-3 py-1 text-center rounded-md mb-2">
             // What We Offer //
           </div>
 
           {/* Main heading */}
-          <h2 className="text-2xl text-blacks text-center font-bold mb-4">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl text-blacks text-center font-extrabold mb-8">
             Our Products
           </h2>
 
@@ -124,7 +124,7 @@ const Products = () => {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-6 sm:px-12 md:px-16 lg:px-20 py-3 rounded-t-lg text-lg font-semibold border transition-all duration-300 ${
+                  className={`px-6 sm:px-12 md:px-16 lg:px-20 py-3 rounded-t-lg text-sm md:text-base lg:text-lg font-semibold border transition-all duration-300 ${
                     activeTab === tab
                       ? "bg-gradients text-white shadow-md"
                       : "bg-whites text-gray-600 hover:bg-green-100 hover:text-green-600"
