@@ -31,10 +31,10 @@ const ProductHero = ({ title, tagline, rightImage }) => {
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-24 relative z-10">
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left max-w-lg py-5">
-          <div className="text-sm md:text-base font-medium text-blue inline-block px-3 py-1 rounded-md mb-2">
+          <div className="text-sm md:text-base xl:text-lg font-semibold text-blue inline-block px-3 py-1 rounded-md mb-2">
             // {tagline} //
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold leading-snug text-[#231A1C]">
+          <h1 className="text-2xl md:text-4xl xl:text-5xl font-extrabold leading-snug text-blacks">
             {title}
           </h1>
         </div>
