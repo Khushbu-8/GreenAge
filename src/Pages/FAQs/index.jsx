@@ -83,9 +83,10 @@ const FAQs = () => {
     <main className="pt-0">
       {/* Hero Section */}
       <HeroSection title="FAQs" tagline="FAQs" rightImage={aboutGroupImg} />
-
+<div className="container mx-auto">
       {/* FAQ Section */}
-      <section className="w-full flex flex-col items-center bg-[#F9FBFC] py-10 sm:py-14 px-4 sm:px-8">
+      <section className="w-full flex flex-col items-center bg-white py-16">
+       
         {/* Heading */}
         <TitleHeading
           tagline="Our FAQs"
@@ -93,14 +94,15 @@ const FAQs = () => {
         />
 
         {/* FAQ List */}
-        <div className="w-full max-w-5xl flex flex-col gap-5 pb-10 sm:pb-20">
+       
+         <div className="w-full max-w-5xl flex flex-col gap-5 pb-20 lg:pb-10">
           {faqData.map((faq, index) => (
             <div
               key={index}
               onClick={() => toggleFAQ(index)}
-              className={`relative rounded-xl p-[1px] transition-all duration-300 cursor-pointer ${
+              className={`relative rounded-xl p-[1px] transition-all duration-200 cursor-pointer ${
                 openIndex === index
-                  ? "bg-gradient-to-r from-[#83BF2D] to-[#00A3AF]"
+                  ? "border-gradients"
                   : "bg-transparent border border-gray-200"
               }`}
             >
@@ -108,7 +110,7 @@ const FAQs = () => {
               <div className="flex flex-col rounded-xl bg-white p-4 sm:p-5">
                 {/* Question */}
                 <div className="flex justify-between items-center gap-3">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold text-[#011B33] flex-1">
+                  <h3 className="text-sm sm:text-base md:text-lg xl:text-2xl font-semibold text-[#011B33] flex-1">
                     {faq.question}
                   </h3>
 
@@ -116,8 +118,8 @@ const FAQs = () => {
                   <div
                     className={`w-7 h-7 flex items-center justify-center rounded-full transition-all duration-300 ${
                       openIndex === index
-                        ? "bg-[linear-gradient(180deg,#83BF2D_-53.23%,#00A3AF_191.13%)] text-white rotate-180"
-                        : "bg-gray-100 text-green-500 rotate-0"
+                        ? "bg-gradients text-white rotate-180"
+                        : "bg-gray-100 text-green border  rotate-0"
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -126,11 +128,11 @@ const FAQs = () => {
 
                 {/* Answer */}
                 <div
-                  className={`overflow-hidden transition-all duration-500 ${
+                  className={`overflow-hidden transition-all duration-200 ${
                     openIndex === index ? "max-h-[600px] mt-3" : "max-h-0"
                   }`}
                 >
-                  <p className="text-[#666] text-xs sm:text-sm md:text-base leading-relaxed">
+                  <p className="text-grays text-sm md:text-base lg:text-lg leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -138,7 +140,9 @@ const FAQs = () => {
             </div>
           ))}
         </div>
+       
       </section>
+      </div>
     </main>
   );
 };

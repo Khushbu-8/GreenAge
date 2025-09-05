@@ -10,7 +10,7 @@ const Characteristics = ({
   parameters,
 }) => {
   return (
-    <section className=" pb-16">
+    <section className="pb-40 lg:pb-28">
       {/* Top Section: Tagline + Heading + Description */}
       <ProductInfoSection
         tagline={tagline}
@@ -39,9 +39,6 @@ const Characteristics = ({
               </h3>
             )
           }
-          {/* <h3 className="text-blue text-xl md:text-2xl font-semibold mb-8">
-            {rightTitle}
-          </h3> */}
 
           {/* Parameters List */}
           <div className="space-y-10 relative">

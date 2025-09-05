@@ -15,11 +15,11 @@ const QualitySection = () => {
   return (
     <section className="w-full bg-white py-12">
       {/* Top Title */}
- <ProductInfoSection
-          tagline="Quality You Can Trust "
-          heading="Quality"
-          description="GreenAge boasts of state-of-the-art infrastructure equipped with latest technology and world class Rotomoulding machineries in the enterprising city of Ahmedabad, Gujarat. Our laboratory is endowed with basic Data Sheet measurement apparatus such as:"
-        />     
+      <ProductInfoSection
+        tagline="Quality You Can Trust "
+        heading="Quality"
+        description="GreenAge boasts of state-of-the-art infrastructure equipped with latest technology and world class Rotomoulding machineries in the enterprising city of Ahmedabad, Gujarat. Our laboratory is endowed with basic Data Sheet measurement apparatus such as:"
+      />
 
       {/* Cards Layout */}
       <div className="flex flex-wrap justify-center gap-6 mx-auto">
@@ -30,17 +30,17 @@ const QualitySection = () => {
           return (
             <div
               key={item.id}
-              className={`flex items-center gap-5 bg-white shadow-lg border-l-[2px] border-[#00A96E] rounded-xl px-6 py-5 hover:shadow-xl transition duration-300 w-[550px]
+              className={`flex items-center gap-5 bg-white shadow-lg border-l-[2px] border-[#00A96E] rounded-xl px-3 md:px-6 py-5 hover:shadow-xl transition duration-300 w-full lg:w-[450px]  xl:w-[600px]
                 ${isLastCard && isOdd ? "mx-auto" : ""}
               `}
             >
               {/* Number Circle */}
-              <div className="flex items-center justify-center h-10 w-10 rounded-full border border-gray-300 bg-gray-100 text-[#00A96E] font-semibold text-lg">
+              <div className="flex items-center justify-center h-10 w-10  rounded-full border border-gray-300 bg-gray-100 text-green font-semibold text-lg">
                 {index + 1}
               </div>
 
               {/* Title */}
-              <p className="text-[#1C1C1C] font-medium text-base leading-snug">
+              <p className="text-black w-80 xl:w-[90%] font-semibold text-sm md:text-lg xl:text-2xl leading-snug">
                 {item.title}
               </p>
             </div>

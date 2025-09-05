@@ -8,7 +8,15 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const manuItem = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Products", path: "/products" },
+    { name: "What We Do", path: "/what-we-do" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "News", path: "/news" },
+    { name: "FAQs", path: "/faqs" },
+  ];
   return (
     <header
       className="bg-white shadow-md py-4 fixed w-full z-30 "
@@ -38,89 +46,30 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex md:space-x-8">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold  px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/products"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            Products
-          </NavLink>
-          <NavLink
-            to="/what-we-do"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            What We Do
-          </NavLink>
-          <NavLink
-            to="/gallery"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            Gallery
-          </NavLink>
-          <NavLink
-            to="/news"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            News
-          </NavLink>
-          <NavLink
-            to="/faqs"
-            className={({ isActive }) =>
-              `text-blacks hover:text-gradients font-semibold px-1 py-2 ${
-                isActive ? "text-gradient" : ""
-              }`
-            }
-          >
-            FAQs
-          </NavLink>
+        <nav className="hidden xl:flex md:space-x-8 text-lg">
+          {manuItem.map(({ name, path }) => (
+            <NavLink
+              key={path}
+              to={path}
+              className={({ isActive }) =>
+                `relative font-semibold px-1 py-2 transition-all duration-300 
+         ${isActive ? "text-gradients" : "text-blacks"} hover:text-gradients`
+              }
+            >
+              {name}
+            </NavLink>
+          ))}
         </nav>
 
         {/* Right Side - Menu Toggle & Button */}
         <div className="md:w-auto w-1/3 flex justify-end items-center space-x-4">
           <div className="hidden sm:flex">
-
-          <Button
-            text="Get In Touch"
-            icon={<ArrowUpRight className=" w-4 h-4" />}
-          />
+            <Button
+              text="Get In Touch"
+              icon={<ArrowUpRight className=" w-4 h-4" />}
+            />
           </div>
-          
+
           <Link
             to="/"
             className="sm:hidden flex items-center justify-center w-10 h-10 rounded-full"
@@ -135,8 +84,8 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu Sidebar */}
-             <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      
+      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
       {/* Overlay */}
       {menuOpen && (
         <div

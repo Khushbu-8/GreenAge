@@ -23,7 +23,8 @@
 
 
   /* Theme colors */
-  --primary-color: rgba(35, 26, 28, 1);
+  /* --primary-color: rgba(35, 26, 28, 1); */
+   --primary-color: #231A1C;
   --secondary-color: #4CAF50;
   --background-color:rgba(255, 255, 255, 1);
   --white-color: rgba(255, 255, 255, 1);
@@ -79,7 +80,7 @@ h1 {
 
 
 .bg-blacks{
-  background-color: var(--primary-color);
+  background-color: var(--primary-color)!important;
 }
 /* .bg-gradients{
   background-color: var(--background-color-gradient)!important;
@@ -102,8 +103,8 @@ h1 {
 .bg-gray-300{
   background-color: var(--gray-300)!important;
 }
-.bg-blacks{
-  background-color: var(--primary-color);
+.text-blacks{
+  color: var(--primary-color)!important;
 }
 .bg-blue{
   background-color: var(--text-blue);
@@ -114,8 +115,12 @@ h1 {
   background-clip: text;
   color: transparent;
 }
-.text-gradients{
-  color: var(--background-color-gradient)!important;
+.text-gradients {
+  background: var(--background-color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
 }
 
 .text-white{

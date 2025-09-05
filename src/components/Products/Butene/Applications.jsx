@@ -4,7 +4,7 @@ import { ApplicationCard } from "../../UI";
 
 const Applications = ({ heading, tagline, applications }) => {
   return (
-    <div className="w-full  mx-auto px-4 py-12">
+    <div className="w-full mx-auto py-12">
       {/* Top Heading */}
       <TitleHeading tagline={tagline} heading={heading} />
 

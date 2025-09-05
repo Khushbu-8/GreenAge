@@ -18,13 +18,13 @@ const people = [
 
 const People = () => {
   return (
-    <section className="py-12  sm:py-16 bg-white ">
+    <section className="bg-white pb-40 lg:pb-28 ">
       <div className="mx-auto">
         {/* Section Title */}
         <TitleHeading tagline="The people" heading="Our People, Our Power" />
 
         {/* People Cards */}
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 pb-20">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {people.map((person) => (
             <div
               key={person.id}
@@ -41,7 +41,7 @@ const People = () => {
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-grays text-sm sm:text-base leading-relaxed">
                 {person.description}
               </p>
             </div>

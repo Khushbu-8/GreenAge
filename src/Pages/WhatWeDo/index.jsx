@@ -22,7 +22,7 @@ const WhatWeDo = () => {
         tagline="What We Do"
         rightImage={aboutGroupImg}
       />
-      <div className="container ">
+      <div className="container">
         <ProductInfoSection
           tagline="GreenEthene in Action "
           heading="Technology Application"

@@ -22,7 +22,7 @@ const clients = [
     company: "K K Nag Pvt Ltd",
     profile: clientProfile1,
     feedback:
-      "It Was Nice To Have Venture With Greenage Since Last Couple Of Years. We Are Very Much Satisfied With The Service That.",
+      "It Was Nice To Have Venture With Greenage Since Last Couple Of Years. We Are Very Much Satisfied With The Service.",
     rating: 3,
   },
   {
@@ -87,7 +87,7 @@ const OurReviews = () => {
       />
 
       {/* Swiper Slider */}
-      <div className="w-full max-w-7xl mx-auto pb-16">
+      <div className="w-full max-w-7xl mx-auto pb-20 lg:pb-10">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={1}

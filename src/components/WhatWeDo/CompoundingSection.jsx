@@ -13,23 +13,22 @@ const CompoundingSection = () => {
             alt="Compounding Machine"
             className="rounded-[40px] w-full object-cover"
           />
-       
            </div>
 
         {/* Right Content Section */}
-        <div className="w-full lg:w-1/2 text-left">
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
           {/* Subheading */}
-          <p className="text-blue font-semibold tracking-wide text-md mb-2">
+          <p className="text-blue font-semibold tracking-wide text-sm md:text-base lg:text-xl mb-2">
             // COMPOUNDING WITH PURPOSE //
           </p>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-4xl font-bold  mb-6">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl text-blacks font-extrabold  mb-6">
             Compounding
           </h2>
 
           {/* Description */}
-          <p className="text-grays leading-relaxed text-base md:text-md">
+          <p className="text-grays leading-relaxed text-sm md:text-base lg:text-lg ">
             Rotomoulding Is A Process Where A Polymer Is Exposed To Thermal Stress
             Multiple Time Starting With Compounding Followed By Pulverising & Finally
             During Moulding. Ensuring Minimal Thermal Degradation Of Polymer At Each

@@ -14,7 +14,6 @@ const AboutUsPage = () => {
         <People />
      
     </div>
-      {/* <AboutUs /> */}     
     </main>
   );
 };

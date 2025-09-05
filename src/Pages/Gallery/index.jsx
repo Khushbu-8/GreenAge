@@ -7,7 +7,7 @@ const GalleryPage = () => {
   return (
     <main className="pt-0">
       <HeroSection title="Gallery" tagline="Gallery" rightImage={aboutGroupImg} />
-      <div className="container mx-auto">
+      <div className="container">
          <Gallery limit={18} />
       </div>
      

@@ -139,9 +139,9 @@ const Products = () => {
       </section>
 
       {/* Dynamic Tab Content */}
-      <section className="container mx-auto px-6 md:px-12 lg:px-24 py-8">
+      <section className="container mx-auto ">
         {activeTab === "All" && (
-          <div className="text-center pb-20">
+          <div className="text-center pb-24 lg:pb-20">
             {/* for Greenethene */}
             <ProductInfoSection
               tagline="// SUSTAINABLE BY NATURE, POWERED BY SCIENCE //"
@@ -183,7 +183,7 @@ const Products = () => {
         )}
 
         {activeTab === "Butene" && (
-          <div className="text-center pb-20">
+          <div className="text-center pb-28 lg:pb-20">
             {/* For technology allplication */}
             <ProductInfoSection
               tagline="// GreenEthene in Action //"
@@ -226,7 +226,7 @@ const Products = () => {
         )}
 
         {activeTab === "Hexene" && (
-          <div className="text-center pb-20">
+          <div className="text-center pb-28 lg:pb-20">
             {/* for Hexen Technology  */}
             <ProductInfoSection
               tagline="GreenEthene in Action "
@@ -274,7 +274,7 @@ const Products = () => {
         )}
 
         {activeTab === "Ripple" && (
-          <div className="text-center pb-20">
+          <div className="text-center pb-28 lg:pb-20">
             {/* For Spacial Effect  */}
             <ProductInfoSection
               tagline="// Designed to Dazzle //"

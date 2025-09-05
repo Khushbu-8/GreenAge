@@ -29,7 +29,7 @@ const NewsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white px-6 lg:px-16 py-14">
+    <section className="w-full bg-white py-14 pb-28 lg:pb-20">
       {/* Heading */}
       <TitleHeading tagline="Our News" heading="Today’s Top Stories" />
 
@@ -38,7 +38,7 @@ const NewsSection = () => {
         {newsData.map((item) => (
           <div
             key={item.id}
-            className="group rounded-2xl p-[2px] bg-gradient-to-b from-[#83BF2D] to-[#00A3AF] shadow-lg"
+            className="group rounded-2xl border  border-gradients shadow-lg"
           >
             <div className="bg-white rounded-2xl overflow-hidden h-full flex flex-col">
               <img
@@ -47,11 +47,11 @@ const NewsSection = () => {
                 className="w-full h-60 object-cover"
               />
               <div className="p-5">
-                <p className="text-sm text-gray-400 mb-1">Sep 2017 | Kolkata</p>
-                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                <p className="text-sm lg:text-base text-gray-300 mb-1">Sep 2017 | Kolkata</p>
+                <h3 className="text-lg md:text-xl xl:text-2xl font-bold text-blacks mb-2">
                   Star IPF Joint Kolkata Regional Meet
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-grays text-sm md:text-base lg:text-lg leading-relaxed">
                   Joint Kolkata Regional Meet On Rotomoulding. GreenAge Industries
                   Continued Its Strong Supporter Role With A Second Successive
                   Meet Sponsorship As Well As An Important Presentation By Mr. Ravi

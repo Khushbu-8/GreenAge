@@ -35,17 +35,9 @@ const Gallery = ({ limit }) => {
   const displayedImages = limit ? galleryImages.slice(0, limit) : galleryImages;
 
   return (
-    <section className="py-12 sm:py-16 bg-white">
-      <div className=" mx-auto">
+    <section className="bg-white pb-28 lg:pb-20">
+      <div className="mx-auto">
         {/* Section Title */}
-        {/* <div className="text-center mb-8 sm:mb-12">
-          <h4 className="text-cyan-600 text-xs sm:text-sm font-semibold tracking-wide mb-2">
-            // OUR GALLERY //
-          </h4>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-            Gallery Of Excellence
-          </h2>
-        </div> */}
         <TitleHeading tagline="Our Gallery" heading="Gallery Of Excellence"  />
 
         {/* Gallery Grid */}
@@ -81,29 +73,6 @@ const Gallery = ({ limit }) => {
 
         {/* View More Button */}
         <div className="my-8 sm:mt-10 flex justify-center text-center">
-          {/* <button
-            className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold shadow-lg transition duration-300 flex items-center space-x-2 mx-auto text-sm sm:text-base"
-            style={{
-              background: "var(--background-color-gradient)",
-              color: "var(--background-color)",
-            }}
-          >
-            <span>View More</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 sm:h-5 sm:w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </button> */}
           <Button
             text="View More"
             className="text-center"

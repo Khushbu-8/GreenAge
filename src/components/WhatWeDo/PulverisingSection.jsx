@@ -35,44 +35,30 @@ const PulverisingSection = () => {
   return (
     <section className="w-full md:py-16 relative">
       {/* Header */}
-      {/* <div className="text-center mb-12">
-        <p className="text-[#00A3AF] font-semibold tracking-wide text-sm">
-          // PULVERISING POWER //
-        </p>
-        <h2 className="text-3xl lg:text-4xl font-bold mt-2 text-gray-200">
-          Pulverising
-        </h2>
-        <p className="max-w-4xl mx-auto text-gray-400 text-sm mt-4 leading-relaxed">
-          PALLMAN Pulverisers Are The Ultimate Solution For Critical Pulverising
-          Requirements. In Size Reduction Technology PALLMAN Enjoys A Leadership
-          Status With Numerous Patents And Inventions. GreenAge Utilizes The
-          PALLMAN Polygrinders To Achieve Outstanding Quality That Is Not Only
-          Consistent But Is Totally Automatic. It Has Predefined Sensors For
-          Temperature, Pressure And Power Consumption Which Register Reading And
-          Control The System According To Preset Parameters.
-        </p>
-      </div> */}
-       <ProductInfoSection
-          tagline="Pulverising Power"
-          heading="Pulverising"
-          description="PALLMAN pulverisers are the ultimate solution for critical pulverising requirements. In size reduction technology PALLMAN enjoys a leadership status with numerous patents and inventions. GreenAge utilizes the PALLMAN polygrinders to achieve outstanding quality that is not only consistent but is totally automatic. It has predefined sensors for Temperature, Pressure and Power consumption which register reading and control the system according to preset parameters."
-        />
+
+      <ProductInfoSection
+        tagline="Pulverising Power"
+        heading="Pulverising"
+        description="PALLMAN pulverisers are the ultimate solution for critical pulverising requirements. In size reduction technology PALLMAN enjoys a leadership status with numerous patents and inventions. GreenAge utilizes the PALLMAN polygrinders to achieve outstanding quality that is not only consistent but is totally automatic. It has predefined sensors for Temperature, Pressure and Power consumption which register reading and control the system according to preset parameters."
+      />
 
       {/* Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 lg:gap-28 xl:gap-36 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 lg:gap-24 xl:gap-36 relative">
         {/* Left Top Cards */}
         <div className="flex flex-col gap-10 relative justify-end items-end w-full">
           {cards.slice(0, 2).map((card, index) => (
             <div
               key={card.id}
-              className="relative bg-white text-gray-800 rounded-xl shadow-lg p-6 w-full  md:max-w-[340px] border border-gray-200"
+              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full  lg:max-w-[370px] xl:max-w-[440px] border border-gray-200"
             >
               {/* Number Circle */}
               <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
                 {card.id}
               </div>
-              <h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
-              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+              <h3 className="text-lg xl:text-2xl font-bold text-blacks">
+                {card.title}
+              </h3>
+              <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
                 {card.description}
               </p>
             </div>
@@ -80,36 +66,38 @@ const PulverisingSection = () => {
         </div>
 
         {/* Top Right Image */}
-        <div className="flex justify-center bg-gray-100 overflow-hidden rounded-xl my-6  items-start">
-          <img 
+        <div className="flex justify-center h-60 md:h-full lg:h-[470px] xl:h-[500px] bg-gray-100 overflow-hidden rounded-xl my-8 md:my-0 lg:my-6  items-start">
+          <img
             src={machineImg}
             alt="Machine"
-            className="rounded-ss-[50px] shadow-xl w-full h-full object-cover ps-10 pt-10 overflow-hidden"
+            className="lg:rounded-ss-[50px] shadow-xl w-full h-full object-cover lg:ps-10 lg:pt-10 overflow-hidden"
           />
-        </div>  
+        </div>
 
         {/* Bottom Left Image */}
-       <div className="flex justify-center bg-gray-100 overflow-hidden rounded-xl items-start">
+        <div className="flex justify-center bg-gray-100 overflow-hidden rounded-xl items-start">
           <img
             src={factoryImg}
             alt="Factory"
-           className="rounded-ss-[50px] shadow-xl w-full h-full object-cover ps-10 pt-10 overflow-hidden"
+            className="lg:rounded-ss-[50px] shadow-xl w-full h-full object-cover lg:ps-10 lg:pt-10 overflow-hidden"
           />
         </div>
 
         {/* Bottom Right Cards */}
-        <div className="flex flex-col gap-10 relative my-8">
+        <div className="flex flex-col gap-10 relative py-8 md:p-0 lg:my-8">
           {cards.slice(2, 4).map((card) => (
             <div
               key={card.id}
-              className="relative bg-white text-gray-800 rounded-xl shadow-lg p-6 w-full md:max-w-[290px] border border-gray-200"
+              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full md:max-w-[350px] border border-gray-200"
             >
               {/* Number Circle */}
               <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
                 {card.id}
               </div>
-              <h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
-              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+              <h3 className="text-lg xl:text-2xl font-bold text-blacks">
+                {card.title}
+              </h3>
+              <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
                 {card.description}
               </p>
             </div>
@@ -119,10 +107,10 @@ const PulverisingSection = () => {
 
       {/* Dotted Gradient Connector */}
       {/* <div className="absolute top-[300px] left-[180px] w-[2px] h-[550px] bg-gradient-to-b from-[#83BF2D] to-[#00A3AF] border-doted"></div> */}
-            <img
+      <img
         src={vectorLine}
         alt="Dotted Path"
-        className="absolute lg:top-[30%] xl:top-[28%] lg:left-[28%] xl:left-[33%] -translate-x-1/2 w-[120px] md:w-[350px] lg:w-[450px] xl:w-[490px] z-10 hidden lg:flex pointer-events-none"
+        className="absolute lg:top-[30%] xl:top-[26%] lg:left-[27%] xl:left-[29%] -translate-x-1/2 w-[120px] md:w-[350px] lg:w-[460px] xl:w-[590px] z-10 hidden lg:flex pointer-events-none"
       />
     </section>
   );
