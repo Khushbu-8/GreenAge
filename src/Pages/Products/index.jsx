@@ -108,7 +108,7 @@ const Products = () => {
       <section className="bg-white w-full py-6">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
           {/* Small heading */}
-          <div className="text-sm md:text-base  xl:text-lg font-semibold text-blue px-3 py-1 text-center rounded-md mb-2">
+          <div className="text-sm md:text-base xl:text-lg font-semibold text-blue px-3 py-1 text-center rounded-md mb-2">
             // What We Offer //
           </div>
 

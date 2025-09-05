@@ -7,7 +7,7 @@ import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 const AboutUsPage = () => {
   return (
     <main className="pt-0">
-      <HeroSection title="About Us" tagline="About Us" rightImage={aboutGroupImg} />
+      <HeroSection title="About Us" tagline="Welcome To greenage" rightImage={aboutGroupImg} />
     <div className='container'>
         <OurStory />
         <WhyGreenage />
