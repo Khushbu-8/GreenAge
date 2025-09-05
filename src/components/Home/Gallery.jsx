@@ -35,7 +35,7 @@ const Gallery = ({ limit }) => {
   const displayedImages = limit ? galleryImages.slice(0, limit) : galleryImages;
 
   return (
-    <section className="bg-white pb-28 lg:pb-20">
+    <section className="bg-white py-16 pb-28 lg:pb-20">
       <div className="mx-auto">
         {/* Section Title */}
         <TitleHeading tagline="Our Gallery" heading="Gallery Of Excellence"  />

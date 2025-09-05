@@ -24,7 +24,7 @@ const WhatWeDo = () => {
       />
       <div className="container">
         <ProductInfoSection
-          tagline="GreenEthene in Action "
+          tagline="// GreenEthene in Action //"
           heading="Technology Application"
           description={`"INVESTING IN TCHNOLOGY KEEPS YOU A STEP AHEAD ALWAYS"`}
           description2="We at GreenAge believe in sowing the best to reap excellence. We have equipped ourselves with best Machineries available to combat our competitors. Latest High Tech Extruders give superior dispersion of the pigments, rapid change of colors giving consistent quality. Granules are pulverised in high tech PALLMAN Polygrinders to ensure consistent product output in terms of quality."
