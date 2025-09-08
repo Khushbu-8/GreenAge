@@ -68,7 +68,7 @@ const Services = () => {
                   />
                 </div>
                 <h3
-                  className={`text-lg sm:text-xl xl:text-3xl font-semibold text-blacks group-hover:text-white`}
+                  className={`text-lg sm:text-xl xl:text-3xl font-semibold text-blacks group-hover:!text-white`}
                 >
                   {service.title}
                 </h3>
@@ -76,7 +76,7 @@ const Services = () => {
 
               {/* Description */}
               <p
-                className={`mb-6 text-start text-sm sm:text-base xl:text-lg leading-relaxed text-grays group-hover:text-white`}
+                className={`mb-6 text-start text-sm sm:text-base xl:text-lg leading-relaxed text-grays group-hover:!text-white`}
               >
                 {service.description}
               </p>
@@ -85,10 +85,10 @@ const Services = () => {
               <div className="flex items-center justify-between">
                 <a
                   href="#"
-                  className="flex items-center gap-2 text-sm ,md:text-base xl:text-lg font-semibold text-gradient group-hover:text-white"
+                  className="flex items-center gap-2 text-sm md:text-base xl:text-lg font-semibold text-gradient group-hover:text-white"
                 >
                   Learn More
-                  <ArrowUpRight className="w-4 h-4 text-green-500" />
+                  <ArrowUpRight className="w-4 h-4 text-green-500 group-hover:text-white" />
                 </a>
                 <span className="text-3xl sm:text-4xl xl:text-5xl font-bold opacity-40 text-gray-400 group-hover:text-white">
                   {service.id}

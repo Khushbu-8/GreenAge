@@ -8,6 +8,7 @@ import {
   OurClients, 
   OurReviews 
 } from '../../components/Home';
+import { ScrollToTop } from '../../components/UI';
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
       <OurClients />
       <OurReviews />
      </div>
+     
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </main>
   );
 };

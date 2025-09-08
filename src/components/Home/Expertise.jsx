@@ -4,7 +4,7 @@ import TitleHeading from "../UI/TitleHeading";
 
 const Expertise = () => {
   return (
-    <section className="w-full py-12 ">
+    <section className="lg:w-[900px] xl:w-[1100px] mx-auto py-12 ">
       {/* Top Heading */}
       <TitleHeading tagline="Our Expertise" heading="Expertise That Delivers" />
 
@@ -44,7 +44,7 @@ const Expertise = () => {
             <img
               src={shapeImg}
               alt="Shape"
-              className="rounded-xl shadow-md w-full h-auto object-cover"
+              className="rounded-xl shadow-md w-full h-full object-cover"
             />
           </div>
         </div>

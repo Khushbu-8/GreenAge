@@ -14,10 +14,13 @@ import GalleryPage from './Pages/Gallery'
 import News from './Pages/News'
 import FAQs from './Pages/FAQs'
 import Contact from './Pages/Contact'
+import { ScrollUp } from './components/UI'
 
 function App() {
   return (
     <BrowserRouter>
+
+      <ScrollUp />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />

@@ -149,11 +149,11 @@ const Products = () => {
               description="GreenAge Industries have etched their name in the field of development and manufacturing of Rotomoulding Powder/Compounds in blazing fonts. Foundation of the company was laid back in the year 2012, as a subsidiary of the 30-year-old Umiya Group of Industries..."
             />
             {/* <Characteristics  */}
-            <ProductInfoSection
+            {/* <ProductInfoSection
               tagline="// ECO-ETHENE FOR A GREENER PLANET //"
               heading="Characteristics Of GreenEthene"
               description="GreenEthene Contains A Premium UV And AO Stabilisation Package. They Are Also Provided With Special Internal Release Agent, Enabling Molders To Omit The Usage Of Externally Applied Release Agent."
-            />
+            /> */}
             {/* <Characteristics /> */}
             <Characteristics
               tagline="// ECO-ETHENE FOR A GREENER PLANET //"

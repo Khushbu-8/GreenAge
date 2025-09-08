@@ -59,7 +59,7 @@ const clients = [
     id: 5,
     name: "Umesh Joshi",
     designation: "Propreitor",
-    company: "Vortex Technoplast Industries",
+    company: "Vortex Technoplast Industries ",
     profile: clientProfile3,
     feedback:
       "Extra Ordinary Whiteness, Finishing Of Material Is Very Good, Advise To Use MDPE For Strength Of Tank, Reduce Price.",
@@ -107,7 +107,7 @@ const OurReviews = () => {
               key={client.id}
               className="group relative bg-white rounded-2xl  p-6 pt-10 mt-8 flex flex-col  justify-between 
                          transition-all duration-500 border border-gray-400 
-                         hover:border-transparent card-glow"
+                         hover:border-transparent card-glow !h-[300px] md:!h-[350px]" 
             >
               {/* Profile + Heart */}
               <div className="absolute left-1/2 -top-[30px] transform -translate-x-1/2 z-50 flex flex-col items-center">
@@ -140,19 +140,19 @@ const OurReviews = () => {
                     className={`${
                       index < client.rating
                         ? "text-yellow-400 fill-yellow-400"
-                        : "text-gray-300 fill-gray-300"
+                        : "text-gray-star fill-gray-star"
                     }`}
                   />
                 ))}
               </div>
 
               {/* Feedback */}
-              <p className="text-grays  text-sm md:text-base xl:text-lg leading-relaxed mb-10">
+              <p className="text-grays text-sm md:text-base xl:text-lg leading-relaxed mb-10 line-clamp-3">
                 {client.feedback}
               </p>
 
               {/* Client Info */}
-              <h4 className="font-semibold text-blacks text-lg md:text-xl xl:text-2xl">
+              <h4 className="font-semibold text-blacks text-lg md:text-xl xl:text-2xl line-clamp-1">
                 {client.name}
               </h4>
               <p className="text-sm md:text-base xl:text-lg text-blue  mb-2">

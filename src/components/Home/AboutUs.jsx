@@ -41,7 +41,7 @@ const AboutUs = () => {
               Great Initiatives Are Built On 
               Strong Foundation
             </h3>
-            <p className="text-grays mt-3 sm:mt-4 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base md:text-lg leading-relaxed">
               GreenAge Industries have etched their name in the field of
               development and manufacturing of rotomoulding powder/compounds in
               blazing fonts. Foundation of the company was laid back in the year

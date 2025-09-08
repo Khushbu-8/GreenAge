@@ -10,10 +10,10 @@ import { Button } from "../UI";
 
 const Hero = () => {
   const powders = [
-    { id: 1, img: powder1, label: "Natural" },
-    { id: 2, img: powder2, label: "Green" },
+    { id: 1, img: powder1, label: "yellow" },
+    { id: 2, img: powder2, label: "purple" },
     { id: 3, img: powder3, label: "Blue" },
-    { id: 4, img: powder4, label: "Red" },
+    { id: 4, img: powder4, label: "black" },
   ];
 
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
             //  WELCOME TO GREENAGE //
           </div>
           <h1 className="text-3xl md:text-5xl xl:text-6xl font-bold leading-snug text-blacks">
-            Rotomoulding LLDPE <span className="font-normal">Powder</span>
+            Rotomoulding LLDPE <span className="font-normal lowercase">Powder</span>
           </h1>
           <p className="mt-4 text-grays text-base md:text-lg leading-relaxed">
             Discover high-quality rotomoulding LLDPE powder designed to deliver
@@ -76,22 +76,54 @@ const Hero = () => {
       </div>
 
       {/* Powder Colors Section */}
-      <div className="container mx-auto mt-14 px-6 md:px-12 lg:px-20 relative z-10">
+      {/* <div className="container mx-auto mt-14 px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {powders.map((powder) => (
             <div
               key={powder.id}
-              className="group bg-white rounded-2xl shadow-md p-2 flex flex-col items-center cursor-pointer transform hover:-translate-y-4 transition duration-300"
+              className="group bg-white w-44 h-40 lg:w-60 lg:h-52 xl:w-72 xl:h-64 overflow-hidden rounded-2xl shadow-md p-2 flex flex-col items-center align-center cursor-pointer transform hover:-translate-y-4 transition duration-300"
             >
               <img
                 src={powder.img}
                 alt={powder.label}
-                className="w-40 h-40 object-contain mb-3 transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full lg:w-full lg:h-40 xl:w-full xl:h-52 object-cover mb-3 transition-transform duration-300 group-hover:scale-110"
               />
             </div>
           ))}
         </div>
+      </div> */}
+<div className="container mx-auto mt-14 px-6 md:px-12 lg:px-20 relative z-10">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {powders.map((powder) => (
+      <div
+        key={powder.id}
+        className="bg-white rounded-lg overflow-hidden group w-40 h-40 lg:w-60 lg:h-52 xl:w-72 xl:h-64 [perspective:1000px]"
+      >
+        {/* Inner flip card */}
+        <div className="relative w-full h-full rounded-2xl  transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          
+          {/* Front */}
+          <div className="absolute inset-0 overflow-hidden rounded-2xl [backface-visibility:hidden]">
+            <img
+              src={powder.img}
+              alt={powder.label}
+              // className="w-full h-full object-cover"
+               className="w-full h-full lg:w-full lg:h-40 xl:w-full xl:h-52 object-contain md:object-cover mb-3 transition-transform duration-300 group-hover:scale-110"
+           
+            />
+          </div>
+
+          {/* Back */}
+          <div className="absolute inset-0 rounded-2xl flex items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)] text-green">
+            <h2 className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold text-center px-3">
+              {powder.label}
+            </h2>
+          </div>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Rectangle Frame - Bottom */}
       <img
