@@ -4,9 +4,9 @@ import {
   AboutUs, 
   Services, 
   Expertise, 
-  Gallery, 
   OurClients, 
-  OurReviews 
+  OurReviews, 
+  GallerySlider
 } from '../../components/Home';
 import { ScrollToTop } from '../../components/UI';
 
@@ -18,7 +18,7 @@ const Home = () => {
       <AboutUs />
       <Services />
       <Expertise />
-      <Gallery limit={9} />
+      <GallerySlider />
       <OurClients />
       <OurReviews />
      </div>

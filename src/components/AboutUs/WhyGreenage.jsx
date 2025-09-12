@@ -134,23 +134,26 @@ const WhyGreenage = () => {
           {/* Features absolute positioned for lg+ screens (same as before) */}
           <div className="hidden lg:block w-full">
             {/* Feature 1 */}
-            <div
-              onClick={() => setCurrentBag(BagImage1)}
-              className="absolute top-4 right-40 flex items-start gap-3 text-left w-[50%] cursor-pointer"
-            >
-              <img
-                src={Icon1}
-                alt="Low Investment"
-                className="w-20 h-20 object-contain"
-              />
-              <div>
-                <h6 className="font-semibold text-blacks">Low Investment</h6>
-                <p className="text-grays text-sm leading-relaxed">
-                  It cuts down heavily on investment required for hi-tech
-                  machines used for Granulation and Pulverising the powder. 
-                </p>
-              </div>
-            </div>
+          <div
+  onClick={() => setCurrentBag(BagImage1)}
+  className="group absolute top-4 right-40 flex items-start gap-3 rounded-s-full p-2 text-left w-[50%] cursor-pointer transition-all duration-300 ease-in-out bg-white bg-gradient hover:shadow-xl"
+>
+  <img
+    src={Icon1}
+    alt="Low Investment"
+    className="w-20 h-20 object-contain"
+  />
+  <div>
+    <h6 className="font-semibold text-blacks group-hover:text-white transition-colors duration-300">
+      Low Investment
+    </h6>
+    <p className="text-grays text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+      It cuts down heavily on investment required for hi-tech
+      machines used for Granulation and Pulverising the powder.
+    </p>
+  </div>
+</div>
+
             {/* Feature 2 */}
             <div
               onClick={() => setCurrentBag(BagImage2)}

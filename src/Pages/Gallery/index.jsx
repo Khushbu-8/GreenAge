@@ -1,14 +1,15 @@
 import React from 'react';
-import { Gallery } from '../../components/Home';
 import aboutGroupImg from "../../assets/AboutUsimages/About-group.png";
 import { HeroSection } from '../../components/UI';
+import { Gallery } from '../../components/Gallery';
+
 
 const GalleryPage = () => {
   return (
     <main className="pt-0">
       <HeroSection title="Gallery" tagline="Gallery" rightImage={aboutGroupImg} />
       <div className="container">
-         <Gallery limit={18} />
+         <Gallery/>
       </div>
      
     </main>

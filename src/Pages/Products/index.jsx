@@ -214,14 +214,13 @@ const Products = () => {
                 },
               ]}
             />
- <ProductOverviewCard />
+            <ProductOverviewCard />
             {/* <Applications Butan tab /> */}
             <Applications
               tagline="APPLIED INNOVATION"
               heading="Application"
               applications={applicationsData}
             />
-           
           </div>
         )}
 

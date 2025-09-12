@@ -30,10 +30,7 @@ const galleryImages = [
   { id: 18, img: galleryImage6, alt: "Gallery Image 18" },
 ];
 
-const Gallery = ({ limit }) => {
-    // If limit is provided, slice the images; else show all
-  const displayedImages = limit ? galleryImages.slice(0, limit) : galleryImages;
-
+const Gallery = () => {
   return (
     <section className="bg-white py-16 pb-28 lg:pb-20">
       <div className="mx-auto">
@@ -42,7 +39,7 @@ const Gallery = ({ limit }) => {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          {displayedImages.map((item) => (
+          {galleryImages.map((item) => (
             <div
               key={item.id}
               className="relative group overflow-hidden rounded-lg h-[220px] sm:h-[260px] md:h-[300px] lg:h-[340px] cursor-pointer"

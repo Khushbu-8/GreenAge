@@ -38,11 +38,14 @@ const Header = () => {
             <BiMenuAltLeft className="w-5 h-5" />
           </button>
           {/* Logo */}
-          <img
-            src={logo}
-            alt="GreenAge Industries Logo"
-            className="h-12 xl:static absolute left-1/2 transform -translate-x-1/2 xl:transform-none xl:left-0"
-          />
+
+          <Link to="/">
+            <img
+              src={logo}
+              alt="GreenAge Industries Logo"
+              className="h-12 xl:static absolute left-1/2 transform -translate-x-1/2 xl:transform-none xl:left-0 cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

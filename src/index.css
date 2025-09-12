@@ -32,6 +32,7 @@
   --gray-200: rgba(49, 49, 49, 1);
   --gray-300: rgba(127, 127, 127, 1);
   --gray-400: #7f7f7f;
+    --gray-500: #a2a0a0;
 
   --background-color-gradient: linear-gradient(
     180deg,
@@ -85,6 +86,9 @@ h1 {
   background-color: var(--background-color-gradient)!important;
 } */
 .bg-gradients {
+  background: var(--background-color-gradient) !important;
+}
+.bg-gradient:hover {
   background: var(--background-color-gradient) !important;
 }
 .bg-gradients-menu {
@@ -143,6 +147,9 @@ h1 {
 .text-gray-400 {
   color: var(--gray-400) !important;
 }
+.text-gray-500 {
+  color: var(--gray-500) !important;
+}
 .text-green {
   color: var(--secondary-color);
 }
@@ -179,6 +186,24 @@ h1 {
 .group:hover .card-3d { transform: rotateY(180deg); }
 .backface { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 
+
+
+/* Application slider */
+/* Pagination rectangle style */
+.custom-pagination .swiper-pagination-bullet {
+  width: 24px;
+  height: 6px;
+  border-radius: 3px; /* makes it pill-shaped */
+  background: #d1d5db; /* gray by default */
+  opacity: 1;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: var(--secondary-color); /* your theme color */
+  width: 32px; /* longer when active */
+}
 
 @media (prefers-color-scheme: light) {
   :root {

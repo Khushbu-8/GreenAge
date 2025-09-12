@@ -1,6 +1,6 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaFacebookF, FaLinkedinIn, FaGoogle, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGoogle, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from "../../assets/images/logo-footer.png";
 
 const Footer = () => {
@@ -12,9 +12,6 @@ const Footer = () => {
           className=" absolute -top-28 lg:-top-16 left-[50%] p-6 sm:p-8 w-[100%] md:w-[90%] max-w-6xl mx-auto rounded-2xl shadow-lg flex flex-col lg:flex-row justify-between items-center md:gap-1 lg:gap-6"
           style={{
             background: "var(--background-color-gradient)",
-            // position: "absolute",
-            // top: "-3.5rem",
-            // left: "50%",
             transform: "translateX(-50%)",
           }}
         >
@@ -126,14 +123,9 @@ const Footer = () => {
                 href="#"
                 className="bg-gray-800 hover:bg-green-600 p-2 rounded-full transition duration-300"
               >
-                <FaGoogle className="text-white w-4 h-4" />
+                <FaInstagram className="text-white w-4 h-4" />
               </a>
-              <a
-                href="#"
-                className="bg-gray-800 hover:bg-green-600 p-2 rounded-full transition duration-300"
-              >
-                <FaTwitter className="text-white w-4 h-4" />
-              </a>
+             
             </div>
           </div>
         </div>

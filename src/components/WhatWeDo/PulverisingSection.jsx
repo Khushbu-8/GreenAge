@@ -55,7 +55,7 @@ const PulverisingSection = () => {
               <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
                 {card.id}
               </div>
-              <h3 className="text-lg xl:text-2xl font-bold text-blacks">
+              <h3 className="text-lg xl:text-xl font-bold text-blacks">
                 {card.title}
               </h3>
               <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
@@ -75,7 +75,7 @@ const PulverisingSection = () => {
         </div>
 
         {/* Bottom Left Image */}
-        <div className="flex justify-center bg-gray-100 overflow-hidden rounded-xl items-start">
+        <div className="flex justify-center bg-gray-100 md:h-full lg:h-[470px] xl:h-[500px] overflow-hidden rounded-xl items-start">
           <img
             src={factoryImg}
             alt="Factory"
@@ -84,11 +84,11 @@ const PulverisingSection = () => {
         </div>
 
         {/* Bottom Right Cards */}
-        <div className="flex flex-col gap-10 relative py-8 md:p-0 lg:my-8">
+        <div className="flex flex-col gap-10 relative py-8 md:p-0 lg:mb-40">
           {cards.slice(2, 4).map((card) => (
             <div
               key={card.id}
-              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full md:max-w-[350px] border border-gray-200"
+              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full md:max-w-[370px] border border-gray-200"
             >
               {/* Number Circle */}
               <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
@@ -110,7 +110,7 @@ const PulverisingSection = () => {
       <img
         src={vectorLine}
         alt="Dotted Path"
-        className="absolute lg:top-[30%] xl:top-[26%] lg:left-[27%] xl:left-[29%] -translate-x-1/2 w-[120px] md:w-[350px] lg:w-[460px] xl:w-[590px] z-10 hidden lg:flex pointer-events-none"
+        className="absolute lg:top-[29%] xl:top-[24%] lg:left-[27%] xl:left-[29%] -translate-x-1/2 w-[120px] md:w-[350px] lg:w-[460px] xl:w-[590px] z-10 hidden lg:flex pointer-events-none"
       />
     </section>
   );
