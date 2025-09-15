@@ -34,8 +34,7 @@ const OurStory = () => {
                   <h6 className="font-bold text-black text-sm sm:text-base md:text-lg group-hover:text-white">
                     Our Mission
                   </h6>
-                  <p className="mt-2 text-xs sm:text-sm md:text-base font-normal text-gray-500 group-hover:text-white">
-                    To Become 100,000 Mt/Yr Global Polymer Processing Company By
+                 <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">    To Become 100,000 Mt/Yr Global Polymer Processing Company By
                     Year 2026.
                   </p>
                 </div>
@@ -59,8 +58,7 @@ const OurStory = () => {
                   <h6 className="font-bold text-black text-sm sm:text-base md:text-lg group-hover:text-white">
                     Our Vision
                   </h6>
-                  <p className="mt-2 text-xs sm:text-sm md:text-base font-normal text-gray-500 group-hover:text-white">
-                    To Satisfy Material Needs Of Rotomoulders By Providing
+                 <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">   To Satisfy Material Needs Of Rotomoulders By Providing
                     Innovative Solutions, To Shape Their Desires Into Reality.
                   </p>
                 </div>
