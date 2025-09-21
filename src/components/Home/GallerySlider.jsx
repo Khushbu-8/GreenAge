@@ -125,7 +125,7 @@ const GallerySlider = () => {
         
 
         {/* Progress Bar + Prev/Next Icons */}
-        <div className="relative w-full mt-6 flex items-center justify-center">
+        <div className="relative w-full flex items-center justify-center">
           {/* Prev */}
           <button
             onClick={() => swiperRef.current?.slidePrev()}
