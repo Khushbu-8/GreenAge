@@ -122,10 +122,7 @@ const GallerySlider = () => {
           </Swiper>
         </div>
 
-        {/* View More Button */}
-        <div className="my-8 sm:mt-10 flex justify-center text-center">
-          <Button text="View More" className="text-center" />
-        </div>
+        
 
         {/* Progress Bar + Prev/Next Icons */}
         <div className="relative w-full mt-6 flex items-center justify-center">
@@ -152,6 +149,11 @@ const GallerySlider = () => {
           >
             <img src={NextIcon} alt="Next" className="w-6 h-6 sm:w-8 sm:h-8" />
           </button>
+        </div>
+
+        {/* View More Button */}
+        <div className="my-8 sm:mt-10 flex justify-center text-center">
+          <Button text="View More" className="text-center" />
         </div>
       </div>
     </section>
