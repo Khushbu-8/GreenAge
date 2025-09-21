@@ -6,7 +6,8 @@ import {
   Expertise, 
   OurClients, 
   OurReviews, 
-  GallerySlider
+  GallerySlider,
+  // ImageSlider
 } from '../../components/Home';
 import { ScrollToTop } from '../../components/UI';
 
@@ -18,10 +19,12 @@ const Home = () => {
       <AboutUs />
       <Services />
       <Expertise />
+     </div>
       <GallerySlider />
+       <div className='container '>
       <OurClients />
       <OurReviews />
-     </div>
+       </div>
      
       {/* Scroll to Top Button */}
       <ScrollToTop />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BagImage1 from "../../assets/AboutUsimages/beg.png";
+import BagImage1 from "../../assets/AboutUsimages/Feature-image.png";
 import BagImage2 from "../../assets/AboutUsimages/beg.png";
 import BagImage3 from "../../assets/AboutUsimages/beg.png";
 import BagImage4 from "../../assets/AboutUsimages/beg.png";
@@ -20,13 +20,13 @@ const WhyGreenage = () => {
         <TitleHeading tagline="Why Greenage?" heading="Why Greenage?" />
 
         {/* Bag & Features */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center relative w-full py-10 gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center relative w-full py-10 gap-8">
           {/* Bag Image */}
-          <div className="flex justify-center mb-8 lg:mb-0">
+          <div className="flex justify-center mb-8 lg:mb-0 feature-gradients   rounded-full w-[230px] h-[230px] md:w-[400px] md:h-[400px]  lg:w-[750px] lg:h-[430px] xl:w-[720px] xl:h-[430px]">
             <img
               src={currentBag}
               alt="GreenAge Bag"
-              className="w-[220px] sm:w-[280px] md:w-[350px] lg:w-[680px] lg:h-[430px] xl:w-[720px] transition-all duration-300"
+              className="absolute w-[50%] lg:w-[35%] top-0 md:-top-[5%] lg:top-0  xl:-top-32   object-contain lg:object-contain"
             />
           </div>
 
@@ -134,30 +134,30 @@ const WhyGreenage = () => {
           {/* Features absolute positioned for lg+ screens (same as before) */}
           <div className="hidden lg:block w-full">
             {/* Feature 1 */}
-          <div
-  onClick={() => setCurrentBag(BagImage1)}
-  className="group absolute top-4 right-40 flex items-start gap-3 rounded-s-full p-2 text-left w-[50%] cursor-pointer transition-all duration-300 ease-in-out bg-white bg-gradient hover:shadow-xl"
->
-  <img
-    src={Icon1}
-    alt="Low Investment"
-    className="w-20 h-20 object-contain"
-  />
-  <div>
-    <h6 className="font-semibold text-blacks group-hover:text-white transition-colors duration-300">
-      Low Investment
-    </h6>
-    <p className="text-grays text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
-      It cuts down heavily on investment required for hi-tech
-      machines used for Granulation and Pulverising the powder.
-    </p>
-  </div>
-</div>
+            <div
+              onClick={() => setCurrentBag(BagImage1)}
+              className="group absolute top-4 lg:right-20 xl:right-40 flex items-start gap-3 rounded-s-full p-2 text-left w-[50%] cursor-pointer transition-all duration-300 ease-in-out bg-white bg-gradient hover:shadow-xl"
+            >
+              <img
+                src={Icon1}
+                alt="Low Investment"
+                className="w-20 h-20 object-contain"
+              />
+              <div>
+                <h6 className="feature-h font-semibold text-blacks group-hover:text-white transition-colors duration-300">
+                  Low Investment
+                </h6>
+                <p className="feature-p text-grays text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                  It cuts down heavily on investment required for hi-tech
+                  machines used for Granulation and Pulverising the powder.
+                </p>
+              </div>
+            </div>
 
             {/* Feature 2 */}
             <div
               onClick={() => setCurrentBag(BagImage2)}
-              className="absolute top-36 right-20 flex items-start gap-3 text-left w-[50%] cursor-pointer"
+              className="absolute top-32 lg:right-10 xl:right-20 flex items-start gap-3 p-2 bg-gradient text-left w-[50%] cursor-pointer rounded-s-full"
             >
               <img
                 src={Icon2}
@@ -165,8 +165,8 @@ const WhyGreenage = () => {
                 className="w-20 h-20 object-contain"
               />
               <div>
-                <h6 className="font-semibold text-blacks">Low Pricing</h6>
-                <p className="text-grays text-sm leading-relaxed">
+                <h6 className="feature-h font-semibold text-blacks">Low Pricing</h6>
+                <p className="feature-p text-grays text-sm leading-relaxed">
                   We offer a lower price margin of Green Ethene Powder as we
                   procure it through large scale processing.
                 </p>
@@ -175,7 +175,7 @@ const WhyGreenage = () => {
             {/* Feature 3 */}
             <div
               onClick={() => setCurrentBag(BagImage3)}
-              className="absolute bottom-1/3 right-20 flex items-start gap-3 text-left w-[50%] cursor-pointer"
+              className="absolute bottom-1/3 lg:right-10 xl:right-20 flex items-start bg-gradient p-2 gap-3 text-left w-[50%] cursor-pointer rounded-s-full"
             >
               <img
                 src={Icon3}
@@ -183,18 +183,18 @@ const WhyGreenage = () => {
                 className="w-20 h-20 object-contain"
               />
               <div>
-                <h6 className="font-semibold text-blacks">High Quality</h6>
-                <p className="text-grays text-sm leading-relaxed">
-                  We practise a no tolerance policy in terms of quality. All our
+                <h6 className="feature-h font-semibold text-blacks">High Quality</h6>
+                <p className="feature-p text-grays text-sm leading-relaxed">
+                  We practise a no tolerance policy in terms of quality.  our
                   products pass stringent quality test following the norms as
-                  per IS 12701: 1996 & IS 1014:2001.
+                  per IS 12701: 1996.
                 </p>
               </div>
             </div>
             {/* Feature 4 */}
             <div
               onClick={() => setCurrentBag(BagImage4)}
-              className="absolute bottom-10 right-40 flex items-start gap-3 text-left w-[50%] cursor-pointer"
+              className=" bg-gradient absolute bottom-10 lg:right-20 xl:right-40 flex items-start p-2 gap-3 text-left w-[50%] cursor-pointer rounded-s-full"
             >
               <img
                 src={Icon4}
@@ -202,8 +202,8 @@ const WhyGreenage = () => {
                 className="w-20 h-20 object-contain"
               />
               <div>
-                <h6 className="font-semibold text-blacks">Less Space</h6>
-                <p className="text-grays text-sm leading-relaxed">
+                <h6 className="feature-h font-semibold text-blacks">Less Space</h6>
+                <p className="feature-p text-grays text-sm leading-relaxed">
                   Procuring the compound from us relieves the customer from
                   managing inventories leading to less space requirement.
                 </p>

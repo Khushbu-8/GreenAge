@@ -49,18 +49,27 @@ const PulverisingSection = () => {
           {cards.slice(0, 2).map((card, index) => (
             <div
               key={card.id}
-              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full  lg:max-w-[370px] xl:max-w-[440px] border border-gray-200"
+              className="group relative bg-white text-blacks rounded-xl shadow-lg  w-full lg:max-w-[370px] xl:max-w-[440px] border border-gray-200 
+             transition-all duration-300 hover:border-transparent hover:bg-gradient-to-r hover:from-[#83BF2D] hover:to-[#00A3AF] p-[1px]"
             >
-              {/* Number Circle */}
-              <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
-                {card.id}
+              {/* Inner wrapper so background gradient applies only to border */}
+              <div className="bg-white rounded-xl p-6 h-full transition-all duration-300">
+                {/* Number Circle */}
+                <div
+                  className="hidden lg:flex absolute -left-16 top-0 w-10 h-10 items-center justify-center 
+                 bg-white text-black font-bold rounded-full border border-black shadow-lg z-20 group-hover:border-0
+                 transition-all  group-hover:bg-gradient-to-r group-hover:from-[#83BF2D] group-hover:to-[#00A3AF] group-hover:text-white"
+                >
+                  {card.id}
+                </div>
+
+                <h3 className="text-lg xl:text-xl font-bold text-blacks transition-colors duration-300 group-hover:text-[#00A3AF]">
+                  {card.title}
+                </h3>
+                <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
+                  {card.description}
+                </p>
               </div>
-              <h3 className="text-lg xl:text-xl font-bold text-blacks">
-                {card.title}
-              </h3>
-              <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
-                {card.description}
-              </p>
             </div>
           ))}
         </div>
@@ -88,18 +97,28 @@ const PulverisingSection = () => {
           {cards.slice(2, 4).map((card) => (
             <div
               key={card.id}
-              className="relative bg-white text-blacks rounded-xl shadow-lg p-6 w-full md:max-w-[370px] border border-gray-200"
+              className="group relative bg-white text-blacks rounded-xl shadow-lg  w-full md:max-w-[370px] border border-gray-200 
+             transition-all duration-300 hover:border-transparent hover:bg-gradient-to-r hover:from-[#83BF2D] hover:to-[#00A3AF] p-[1px]"
             >
-              {/* Number Circle */}
-              <div className="hidden lg:flex absolute -left-16 top-0 w-10 h-10  items-center justify-center bg-white text-black font-bold rounded-full border-2 border-black shadow-lg z-20">
-                {card.id}
+              {/* Inner wrapper for white background inside border gradient */}
+              <div className="bg-white rounded-xl p-6 h-full transition-all duration-300">
+                {/* Number Circle */}
+                <div
+                  className="hidden lg:flex absolute -left-16 top-0 w-10 h-10 items-center justify-center 
+                 bg-white text-black font-bold rounded-full border border-black shadow-lg z-20 group-hover:border-0
+                 transition-all  group-hover:bg-gradient-to-r group-hover:from-[#83BF2D] group-hover:to-[#00A3AF] group-hover:text-white"
+                >
+                  {card.id}
+                </div>
+
+                <h3 className="text-lg xl:text-2xl font-bold text-blacks transition-colors duration-300 group-hover:text-[#00A3AF]">
+                  {card.title}
+                </h3>
+
+                <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
+                  {card.description}
+                </p>
               </div>
-              <h3 className="text-lg xl:text-2xl font-bold text-blacks">
-                {card.title}
-              </h3>
-              <p className="text-sm md:text-base xl:text-lg text-grays mt-2 leading-relaxed">
-                {card.description}
-              </p>
             </div>
           ))}
         </div>

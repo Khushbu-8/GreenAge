@@ -28,22 +28,26 @@ const People = () => {
           {people.map((person) => (
             <div
               key={person.id}
-              className="bg-[#F9F9F9] p-6 sm:p-8 rounded-xl shadow-md"
+              className="group relative rounded-xl  transition-all duration-300 ease-in-out border-1 hover:shadow-xl"
             >
-              {/* Person ID and Name */}
-              <div className="mb-4">
-                <h3 className="text-4xl sm:text-5xl font-extrabold text-gradient mb-2">
-                  {person.id}
-                </h3>
-                <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-                  {person.name}
-                </h4>
-              </div>
+              
+              {/* Inner Card */}
+              <div className="bg-[#F9F9F9] group-hover:bg-white rounded-xl p-6 sm:p-8 h-full transition-colors duration-300">
+                {/* Person ID and Name */}
+                <div className="mb-4">
+                  <h3 className="text-4xl sm:text-5xl font-extrabold text-gradient mb-2">
+                    {person.id}
+                  </h3>
+                  <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+                    {person.name}
+                  </h4>
+                </div>
 
-              {/* Description */}
-              <p className="text-grays text-sm sm:text-base leading-relaxed">
-                {person.description}
-              </p>
+                {/* Description */}
+                <p className="text-grays text-sm sm:text-base leading-relaxed">
+                  {person.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

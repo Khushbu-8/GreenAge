@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 // Import all your images here
 import news1 from "../../assets/Newsimages/news1.jpg";
-import news2 from "../../assets/Newsimages/news2.jpg";  
+import news2 from "../../assets/Newsimages/news2.jpg";
 import news3 from "../../assets/Newsimages/news3.png";
 import news4 from "../../assets/Newsimages/news4.png";
 import news5 from "../../assets/Newsimages/news1.jpg";
@@ -25,7 +25,6 @@ const NewsSection = () => {
     { id: 7, image: news7 },
     { id: 8, image: news8 },
     { id: 9, image: news9 },
-    { id: 10, image: news10 },
   ];
 
   return (
@@ -34,29 +33,69 @@ const NewsSection = () => {
       <TitleHeading tagline="Our News" heading="Today’s Top Stories" />
 
       {/* News Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {newsData.map((item) => (
           <div
             key={item.id}
-            className="group rounded-2xl border  border-gradients shadow-lg"
+            className="group relative rounded-2xl border-gradients  
+                       transition-all duration-300  overflow-hidden"
           >
-            <div className="bg-white rounded-2xl overflow-hidden h-full flex flex-col">
-              <img
-                src={item.image}
-                alt="news"
-                className="w-full h-60 object-cover"
-              />
-              <div className="p-5">
-                <p className="text-sm lg:text-base text-gray-300 mb-1">Sep 2017 | Kolkata</p>
-                <h3 className="text-lg md:text-xl xl:text-2xl font-bold text-blacks mb-2">
-                  Star IPF Joint Kolkata Regional Meet
-                </h3>
-                <p className="text-grays text-sm md:text-base lg:text-lg leading-relaxed">
-                  Joint Kolkata Regional Meet On Rotomoulding. GreenAge Industries
-                  Continued Its Strong Supporter Role With A Second Successive
-                  Meet Sponsorship As Well As An Important Presentation By Mr. Ravi
-                  Kadiwar.
-                </p>
+            <div
+              className="bg-white h-full flex flex-col relative overflow-hidden 
+                         transition-all duration-300 bg-gradient"
+            >
+              {/* News Image */}
+              <div className="relative p-5">
+                <img
+                  src={item.image}
+                  alt="news"
+                  className="w-full h-60 object-cover rounded-xl overflow-hidden"
+                />
+                {/* Date Badge */}
+                <span
+                  className="absolute top-8 left-5 
+             bg-gradients text-white text-xs md:text-sm font-semibold 
+             px-3 py-1 rounded-e-full 
+             transition-all duration-300 
+             group-hover:!bg-white group-hover:!text-green"
+                >
+                  Sep 2017
+                </span>
+              </div>
+
+              {/* Card Content */}
+              <div className="relative flex flex-col justify-between flex-grow p-5">
+                {/* Background faint G */}
+                <span className="absolute text-[150px] font-extrabold text-gray-100 opacity-20 -right-0 -bottom-10 pointer-events-none select-none">
+                  G
+                </span>
+
+                <div>
+                  <h3
+                    className="text-lg md:text-xl font-bold text-blacks mb-2 
+                               transition-colors duration-300 group-hover:!text-white"
+                  >
+                    Star IPF Joint Kolkata Regional Meet
+                  </h3>
+                  <p
+                    className="text-grays text-sm md:text-base leading-relaxed line-clamp-3 
+                               transition-colors duration-300 group-hover:!text-white"
+                  >
+                    Joint Kolkata Regional Meet On Rotomoulding. GreenAge
+                    Industries Continued Its Strong Supporter Role With A Second
+                    Successive Meet Sponsorship As Well As An Important
+                    Presentation By Mr. Ravi Kadiwar.
+                  </p>
+                </div>
+
+                {/* Read More Button */}
+                <div
+                  className="mt-4 flex items-center justify-between gap-2 text-green font-medium 
+                             transition-colors duration-300 group-hover:text-white border-t-2 pt-2"
+                >
+                  <span>Read More</span>
+                  <ArrowRight size={16} className="-rotate-45" />
+                </div>
               </div>
             </div>
           </div>
@@ -65,9 +104,6 @@ const NewsSection = () => {
 
       {/* Load More Button */}
       <div className="flex justify-center my-10">
-        {/* <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#83BF2D] to-[#00A3AF] text-white font-semibold shadow-md hover:opacity-90 transition">
-          Load More <ArrowRight size={18} />
-        </button> */}
         <Button text="Load More" />
       </div>
     </section>

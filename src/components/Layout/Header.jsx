@@ -43,7 +43,7 @@ const Header = () => {
             <img
               src={logo}
               alt="GreenAge Industries Logo"
-              className="h-12 xl:static absolute left-1/2 transform -translate-x-1/2 xl:transform-none xl:left-0 cursor-pointer"
+              className="h-12 xl:static absolute left-1/2 top-0 transform -translate-x-1/2 xl:transform-none xl:left-0 cursor-pointer"
             />
           </Link>
         </div>
