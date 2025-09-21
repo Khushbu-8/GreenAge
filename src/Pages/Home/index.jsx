@@ -21,8 +21,8 @@ const Home = () => {
       <Expertise />
      </div>
       <GallerySlider />
-       <div className='container '>
       <OurClients />
+       <div className='container '>
       <OurReviews />
        </div>
      
