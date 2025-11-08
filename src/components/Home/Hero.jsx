@@ -3,10 +3,10 @@ import productImg1 from "../../assets/images/product-hero1.png";
 import productImg2 from "../../assets/images/product-hero2.png";
 import productImg3 from "../../assets/images/product-hero3.png";
 import backgroundImg from "../../assets/images/background-hero.png";
-import powder1 from "../../assets/images/powder1.png";
-import powder2 from "../../assets/images/powder2.png";
-import powder3 from "../../assets/images/powder3.png";
-import powder4 from "../../assets/images/powder4.png";
+import powder1 from "../../assets/images/Red-Powder.png";
+import powder2 from "../../assets/images/Blue-Powder.png";
+import powder3 from "../../assets/images/Black-Powder.png";
+import powder4 from "../../assets/images/Green-Powder.png";
 import RectangleFram from "../../assets/images/Rectangle-fram.png";
 import { Button } from "../UI";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,7 +61,7 @@ const Hero = () => {
         className="absolute h-[200px] top-16 left-1/2 -translate-x-1/2 w-full  opacity-90 z-[1] pointer-events-none"
       />
       <Swiper
-        modules={[Autoplay, EffectFade, Pagination]}
+        modules={[Autoplay, EffectFade]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         effect="fade"
         fadeEffect={{ crossFade: true }} // 👈 smooth fade in/out
@@ -114,28 +114,13 @@ const Hero = () => {
       </Swiper>
 
       {/* Powder Colors Section */}
-      {/* <div className="container mx-auto mt-14 px-6 md:px-12 lg:px-20 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {powders.map((powder) => (
-            <div
-              key={powder.id}
-              className="group bg-white w-44 h-40 lg:w-60 lg:h-52 xl:w-72 xl:h-64 overflow-hidden rounded-2xl shadow-md p-2 flex flex-col items-center align-center cursor-pointer transform hover:-translate-y-4 transition duration-300"
-            >
-              <img
-                src={powder.img}
-                alt={powder.label}
-                className="w-full h-full lg:w-full lg:h-40 xl:w-full xl:h-52 object-cover mb-3 transition-transform duration-300 group-hover:scale-110"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
+      
       <div className="container mx-auto mt-14 px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {powders.map((powder) => (
             <div
               key={powder.id}
-              className="bg-white rounded-lg border-1  overflow-hidden group w-40 h-40 lg:w-60 lg:h-52 xl:w-72 xl:h-64 [perspective:1000px]"
+              className="bg-white rounded-lg border-1  overflow-hidden group w-40 h-40 lg:w-60 lg:h-52 xl:w-72 xl:h-64 "
             >
               {/* Inner flip card */}
               <div className="relative w-full h-full rounded-2xl  transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -145,7 +130,7 @@ const Hero = () => {
                     src={powder.img}
                     alt={powder.label}
                     // className="w-full h-full object-cover"
-                    className="w-full h-full lg:w-full lg:h-40 xl:w-full xl:h-52 object-contain md:object-cover mb-3 transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full  object-contain md:object-contain mb-3 transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
 

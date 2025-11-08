@@ -1,6 +1,6 @@
 import React from "react";
 import machineImg from "../../assets/images/galleryImage8.jpg"; // Replace with correct path
-import factoryImg from "../../assets/images/galleryImage2.jpg"; // Replace with correct path
+import factoryImg from "../../assets/Whatwedoimages/PowderImage.jpg"; // Replace with correct path
 import vectorLine from "../../assets/images/Vectorline.png"; // dotted line image
 import ProductInfoSection from "../Products/AllProduct/ProductInfoSection";
 
@@ -79,7 +79,7 @@ const PulverisingSection = () => {
           <img
             src={machineImg}
             alt="Machine"
-            className="lg:rounded-ss-[50px] shadow-xl w-full h-full object-cover lg:ps-10 lg:pt-10 overflow-hidden"
+            className="lg:rounded-ss-[50px] shadow-xl w-full h-full object-cover object-right lg:ps-10 lg:pt-10 overflow-hidden"
           />
         </div>
 

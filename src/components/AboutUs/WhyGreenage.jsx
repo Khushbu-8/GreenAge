@@ -22,11 +22,11 @@ const WhyGreenage = () => {
         {/* Bag & Features */}
         <div className="flex flex-col lg:flex-row items-center justify-center relative w-full py-10 gap-8">
           {/* Bag Image */}
-          <div className="flex justify-center mb-8 lg:mb-0 feature-gradients   rounded-full w-[230px] h-[230px] md:w-[400px] md:h-[400px]  lg:w-[750px] lg:h-[430px] xl:w-[720px] xl:h-[430px]">
+          <div className="flex justify-center mb-8 lg:mb-0 feature-gradients rounded-full w-[230px] h-[230px] md:w-[400px] md:h-[400px]  lg:w-[750px] lg:h-[430px] xl:w-[720px] xl:h-[430px]">
             <img
               src={currentBag}
               alt="GreenAge Bag"
-              className="absolute w-[50%] lg:w-[35%] top-0 md:-top-[5%] lg:top-0  xl:-top-32   object-contain lg:object-contain"
+              className="absolute w-[55%] sm:w-[55%]  md:w-[50%] lg:w-[40%] xl:w-[33%] top-5 sm:top-10  md:top-3 lg:top-3 xl:top-15 object-contain lg:object-contain"
             />
           </div>
 

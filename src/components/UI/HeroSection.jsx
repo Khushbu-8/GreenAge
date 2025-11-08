@@ -55,7 +55,7 @@ const HeroSection = ({ title, tagline, rightImage }) => {
           <img
             src={rightImage}
             alt={title}
-            className="relative z-[3] w-full  lg:w-[500px] drop-shadow-xl rounded-xl object-cover"
+            className="relative z-[3] w-full lg:w-[550px] drop-shadow-xl rounded-xl object-cover"
           />
         </div>
       </div>

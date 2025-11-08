@@ -11,9 +11,23 @@ const OurStory = () => {
         <ProductInfoSection
           tagline="// Who We Are //"
           heading="Our Story, Our Strength"
-          description="GreenAge Industries have etched their name in the field of development and manufacturing of Rotomoulding Powder/Compounds in blazing fonts. Foundation of the company was laid back in the year 2012. As a subsidiary of 30 year old Umiya Group of Industries which deals in manufacturing and marketing of various dosage forms of plastics packaging products like PET containers (Jars/ Bottles), PP Twins/ Ropes, Kitchenware (Cutlery), Plastic Bags, Green Age has been able to create its own glowing identity."
-          description2="GreenAge Industries boasts of niche clientele in number of leading and prominent companies such as K K Nag Ltd, Astral Polytechnik Ltd, Consta Cool Pvt Ltd, Promens India Pvt Ltd, ITC Ltd (Food Division), Parle Agro, Dabur India Ltd., WaghBakri Tea etc. We have steered our way up as the first preference of our patrons through outstanding quality, right quantity and punctuality in delivery of our products."
-          description3="Our adherence to technical details and support while innovating and improvising to expand the range of rotomoulding materials has carved our name as the industry leader. Our relationship with our customers extends way beyond the sales, in the form of technical support and services."
+          description="GreenAge Industries have etched their name in the field of development and
+manufacturing of Rotomoulding Powder/Compounds in blazing fonts. Foundation of
+the company was laid back in the year 2012. As a subsidiary of 30 year old Umiya
+Group of Industries which deals in manufacturing and marketing of various dosage
+forms of plastics packaging products like PET containers (Jars/ Bottles), PP Twins/
+Ropes, Disposable Kitchenware, Plastic Carry Bags, etc Green Age has been able
+to create its own glowing identity."
+          description2="GreenAge Industries boasts of niche clientele in number of leading and prominent
+Rotomoulding companies such as Simplast India Pvt Ltd, Seaplast India Pvt Ltd,
+GMI Zarhak Moulders Pvt Ltd, Simba Enterprises – Africa, Atlantic Agro Plast, Venus
+Industries, Vel Plast, etc. We have steered our way up as the first preference of our
+patrons through outstanding quality, right quantity and punctuality in delivery of our
+products."
+          description3="Our adherence to technical details and support while innovating and improvising to
+expand the range of rotomoulding materials has carved our name as the industry
+leader. Our relationship with our customers extends way beyond the sales, in the
+form of technical support and services."
         />
 
         {/* Mission & Vision Cards */}
@@ -34,7 +48,9 @@ const OurStory = () => {
                   <h6 className="font-bold text-black text-sm sm:text-base md:text-lg group-hover:text-white">
                     Our Mission
                   </h6>
-                 <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">    To Become 100,000 Mt/Yr Global Polymer Processing Company By
+                  <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">
+                    {" "}
+                    To Become 100,000 Mt/Yr Global Polymer Processing Company By
                     Year 2026.
                   </p>
                 </div>
@@ -58,7 +74,9 @@ const OurStory = () => {
                   <h6 className="font-bold text-black text-sm sm:text-base md:text-lg group-hover:text-white">
                     Our Vision
                   </h6>
-                 <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">   To Satisfy Material Needs Of Rotomoulders By Providing
+                  <p className="mt-2 text-xs sm:text-sm md:text-base font-normal group-hover:text-white">
+                    {" "}
+                    To Satisfy Material Needs Of Rotomoulders By Providing
                     Innovative Solutions, To Shape Their Desires Into Reality.
                   </p>
                 </div>
