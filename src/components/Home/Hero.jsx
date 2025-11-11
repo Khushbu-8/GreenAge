@@ -18,10 +18,10 @@ import "swiper/css/navigation";
 
 const Hero = () => {
   const powders = [
-    { id: 1, img: powder1, label: "yellow" },
-    { id: 2, img: powder2, label: "purple" },
-    { id: 3, img: powder3, label: "Blue" },
-    { id: 4, img: powder4, label: "black" },
+    { id: 1, img: powder1, label: "Red" },
+    { id: 2, img: powder2, label: "Blue" },
+    { id: 3, img: powder3, label: "Black" },
+    { id: 4, img: powder4, label: "Green" },
   ];
   const slides = [
     {
